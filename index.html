@@ -12,7 +12,7 @@
 <meta content="Luxe Hair Stylist" property="og:title"/>
 <meta content="Premium hair extensions • Hair coloring • Brooklyn, NY" property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="/assets/og-image.jpg" property="og:image"/>
+<meta content="https://ktiphairextension.com/assets/og-image.jpg" property="og:image"/>
 <meta content="#111827" name="theme-color"/>
 <link rel="preload" as="image" href="heronew123.webp" type="image/webp" fetchpriority="high" imagesrcset="heronew123.webp"/>
 <style>
@@ -1362,6 +1362,9 @@ footer .container > div{
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NK37SM85" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div class="dev-banner" style="background:#16161a;border-bottom:1px solid #232327;text-align:center;padding:7px 12px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#c9c9cf;">
+<span style="color:#d1b27c;">&#9679;</span> Website in development &middot; <a href="https://clickbari.it/" target="_blank" rel="noopener" style="color:#d1b27c;">clickbari.it</a>
+</div>
 <header>
 <div class="container nav">
 <div class="insta-wrapper">
@@ -1405,7 +1408,7 @@ in Brooklyn</h2>
 <p class="promo-note-mobile" style="margin:10px 0 0; color:rgba(255,255,255,0.65); font-size:.8rem; text-align:center;">We’ll contact you within 1 hour</p>
 
 </div>
-<div class="card"><img alt="Keratin hair extensions" decoding="async" fetchpriority="high" height="960" src="heronew123.webp" width="720"/></div>
+<div class="card"><img alt="Keratin hair extensions" decoding="async" fetchpriority="high" height="900" src="heronew123.webp" width="1200"/></div>
 </div>
 </section>
 <section id="services">
@@ -1441,7 +1444,7 @@ in Brooklyn</h2>
 </div>
 </div>
 <div class="service stylist-card">
-<img alt="Your stylist" decoding="async" height="800" loading="lazy" src="stylist.webp" width="1200"/>
+<img alt="Your stylist" decoding="async" height="532" loading="lazy" src="stylist.webp" width="700"/>
 <div class="body">
 <h3>Stylist Victoria</h3>
 <p style="margin:6px 0 12px; color:rgba(255,255,255,0.75);">
@@ -1456,7 +1459,7 @@ Hi! I’m Victoria — your personal hair stylist. I work carefully, precisely, 
 <a class="btn" href="#testimonials" style="width:100%; display:inline-block; text-align:center;">See Reviews</a>
 </div>
 </div>
-<div class="service benefits-card" style="display:flex;flex-direction:column;"><img alt="Prices" decoding="async" loading="lazy" src="pricesnew.webp"/>
+<div class="service benefits-card" style="display:flex;flex-direction:column;"><img alt="Premium Slavic hair extensions" decoding="async" height="800" loading="lazy" src="pricesnew.webp" width="1200"/>
 <div class="body">
 <h3>What You Get</h3>
 <div style="display:grid; gap:10px; margin-top:10px;">
@@ -1499,10 +1502,10 @@ Hi! I’m Victoria — your personal hair stylist. I work carefully, precisely, 
 <h3 class="section-title">Beauty Transformations</h3>
 <p class="section-sub">Before &amp; After Results on the Stylist’s <a href="https://www.instagram.com/luxehairstylist/" rel="noopener noreferrer" style="color: var(--brand); text-decoration: underline; font-weight: 600;" target="_blank">Instagram</a></p>
 <div class="gallery">
-<img alt="Hair result 1" height="600" loading="lazy" src="photo4.webp" width="450"/>
-<img alt="Hair result 2" height="600" loading="lazy" src="photo2.webp" width="450"/>
-<img alt="Hair result 3" height="600" loading="lazy" src="photo1.webp" width="450"/>
-<img alt="Hair result 4" height="600" loading="lazy" src="photo3.webp" width="450"/>
+<img alt="Hair result 1" height="600" loading="lazy" src="photo4.webp" width="900"/>
+<img alt="Hair result 2" height="600" loading="lazy" src="photo2.webp" width="900"/>
+<img alt="Hair result 3" height="600" loading="lazy" src="photo1.webp" width="900"/>
+<img alt="Hair result 4" height="600" loading="lazy" src="photo3.webp" width="900"/>
 </div>
 </div>
 </section>
@@ -1537,7 +1540,7 @@ Hi! I’m Victoria — your personal hair stylist. I work carefully, precisely, 
 </div>
 <button aria-label="Close" id="lead-modal-close" style="width:36px; height:36px; border-radius:999px; border:1px solid #2f2f3a; background:rgba(255,255,255,0.06); color:#fff; cursor:pointer;" type="button">✕</button>
 </div>
-<form action="send.php" id="hero-contact-form" method="POST" style="margin-top:14px;">
+<form action="#" id="hero-contact-form" method="POST" style="margin-top:14px;">
 <div style="display:grid; gap:12px">
 <label style="text-align:left; color:#e7e7ea; font-weight:600;">Name
           <input name="name" placeholder="Your name" required="" style="margin-top:6px; width:100%; background:#0e0e10; border:1px solid var(--border); border-radius:12px; padding:12px; color:var(--text)" type="text"/>
@@ -1655,6 +1658,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    // Portfolio demo: the business is closed, so the form does not send anything.
+    var note = form.querySelector('.demo-note');
+    if (!note) {
+      note = document.createElement('p');
+      note.className = 'demo-note';
+      note.style.cssText = 'margin:0;padding:10px 12px;border:1px solid rgba(209,178,124,.45);border-radius:12px;color:#f3e6c9;font-size:.9rem;text-align:center;';
+      note.textContent = 'Online booking is currently unavailable. This website is a portfolio demo.';
+      form.querySelector('button[type=submit]').insertAdjacentElement('beforebegin', note);
+    }
+    return;
     var formData = new FormData(form);
 
     fetch(form.action, {
