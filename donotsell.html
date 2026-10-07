@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Do Not Sell or Share My Personal Information – Luxe Hair Stylist</title>
+  <style>
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background:#0b0b0c;
+      color:#f7f7f8;
+      margin:0;
+      padding:40px 16px;
+    }
+    .container{
+      max-width:900px;
+      margin:0 auto;
+    }
+    h1,h2,h3{
+      color:#d1b27c;
+    }
+    a{
+      color:#d1b27c;
+      text-decoration:underline;
+    }
+    .card{
+      background:#111111;
+      border:1px solid #232327;
+      border-radius:16px;
+      padding:20px;
+      margin-bottom:20px;
+    }
+    label{
+      display:block;
+      font-size:0.9rem;
+      margin-bottom:6px;
+    }
+    input, textarea, select{
+      width:100%;
+      background:#0e0e10;
+      border:1px solid #232327;
+      border-radius:10px;
+      padding:10px 12px;
+      color:#f7f7f8;
+      font-size:0.95rem;
+      box-sizing:border-box;
+    }
+    textarea{
+      resize:vertical;
+      min-height:120px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+    @media(max-width:640px){
+      .grid{grid-template-columns:1fr;}
+    }
+    .checkbox-row{
+      display:flex;
+      align-items:flex-start;
+      gap:8px;
+      margin-bottom:8px;
+      font-size:0.95rem;
+    }
+    .checkbox-row input{
+      width:auto;
+      margin-top:3px;
+    }
+    .muted{
+      font-size:0.8rem;
+      color:#c9c9cf;
+    }
+    .actions{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding-top:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 20px;
+      border-radius:999px;
+      border:1px solid #232327;
+      background:linear-gradient(180deg,#d1b27c,#b89557);
+      color:#111;
+      font-weight:600;
+      cursor:pointer;
+      text-decoration:none;
+      transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+      box-shadow:0 10px 30px rgba(209,178,124,.25);
+    }
+    .btn:hover{
+      transform: translateY(-2px) scale(1.03);
+      box-shadow:0 14px 40px rgba(209,178,124,.35);
+      filter:brightness(1.05);
+    }
+    .btn:active{
+      transform:translateY(1px) scale(0.98);
+      box-shadow:0 6px 18px rgba(209,178,124,.25);
+      filter:brightness(.95);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Do Not Sell or Share My Personal Information</h1>
+    <p class="muted" style="margin-top:4px;margin-bottom:18px;">Last updated: November 11th, 2025</p>
+
+    <div class="card">
+      <p style="margin-top:0;margin-bottom:12px;">
+        Use this form to submit a privacy request (for example, to opt out of sale/sharing for advertising, delete data, or request access).
+        We will verify your request and respond using the contact details you provide.
+      </p>
+      <p class="muted" style="margin:0;">
+        You can also email us directly at
+        <a href="mailto:contact@luxehairstylist.com">contact@luxehairstylist.com</a> or call +1 (347) 981‑7187.
+      </p>
+    </div>
+
+    <form id="dnss-form" action="#" method="POST" class="card" style="margin-bottom:10px;">
+      <input type="hidden" name="request_type" value="ccpa_do_not_sell_or_share"/>
+      <h2 style="margin-top:0;">Your Details</h2>
+
+      <div class="grid" style="margin-bottom:14px;">
+        <div>
+          <label>Full name *</label>
+          <input required name="name" type="text"/>
+        </div>
+        <div>
+          <label>Email *</label>
+          <input required name="email" type="email"/>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-bottom:14px;">
+        <div>
+          <label>Phone (optional)</label>
+          <input name="phone" type="tel"/>
+        </div>
+        <div>
+          <label>State (optional)</label>
+          <input name="state" type="text" placeholder="e.g., NY, CA"/>
+        </div>
+      </div>
+
+      <div style="margin-bottom:14px;">
+        <h3 style="margin-top:0;">Request</h3>
+        <label class="checkbox-row">
+          <input type="checkbox" name="opt_out_sale_share" value="yes"/>
+          <span>Opt out of sale or sharing of my personal information (including targeted advertising)</span>
+        </label>
+        <label class="checkbox-row">
+          <input type="checkbox" name="delete_my_data" value="yes"/>
+          <span>Delete my personal information</span>
+        </label>
+        <label class="checkbox-row">
+          <input type="checkbox" name="access_my_data" value="yes"/>
+          <span>Provide me with a copy of my personal information</span>
+        </label>
+      </div>
+
+      <div style="margin-bottom:14px;">
+        <label>Additional details (optional)</label>
+        <textarea name="message" placeholder="Describe your request or provide any identifiers we should search for (e.g., your phone number used on our site)."></textarea>
+      </div>
+
+      <p class="muted">
+        By submitting this form, you confirm that you are the consumer (or authorized agent) making this request. We will use the information
+        you provide solely to process and respond to your request.
+      </p>
+
+      <div class="actions">
+        <button type="submit" class="btn">Send request</button>
+        <a href="/" class="muted" style="text-decoration:underline;">Back to Home</a>
+      </div>
+    </form>
+
+    <p class="muted">
+      See our <a href="privacy.html">Privacy Policy</a> for more details.
+    </p>
+
+    <p class="muted" style="margin-top:14px;">
+      Prefer not to use the form? Email us at
+      <a href="mailto:contact@luxehairstylist.com">contact@luxehairstylist.com</a>.
+    </p>
+  </main>
+
+  <script>
+    (function(){
+      var form = document.getElementById('dnss-form');
+      if(!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        alert('Your request has been sent. We will get back to you shortly.');
+        form.reset();
+      }, { passive:false });
+    })();
+  </script>
+</body>
+</html>
