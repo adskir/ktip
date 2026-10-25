@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Luxe Hair Stylist — Premium Hair Extensions &amp; Color in Brooklyn</title>
+<meta name="description" content="Premium hair extensions and complete salon services in Brooklyn, NY. Personalized care by Victoria. Book your consultation today."/>
+<meta property="og:title" content="Luxe Hair Stylist"/>
+<meta property="og:description" content="Premium hair extensions • Hair coloring • Brooklyn, NY"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://ktiphairextension.com/assets/og-image.jpg"/>
+<meta name="theme-color" content="#F2EBE1"/>
+<link rel="icon" href="/favicon.png"/>
+<link rel="preload" href="/fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="/fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" as="image" href="/heronew123.webp" fetchpriority="high"/>
+<style>
+@font-face{font-family:'Bodoni Moda';font-weight:400;font-style:normal;font-display:swap;src:url(/fonts/bodoni-moda-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Bodoni Moda';font-weight:400;font-style:italic;font-display:swap;src:url(/fonts/bodoni-moda-latin-400-italic.woff2) format('woff2')}
+@font-face{font-family:'Bodoni Moda';font-weight:500;font-style:normal;font-display:swap;src:url(/fonts/bodoni-moda-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Bodoni Moda';font-weight:500;font-style:italic;font-display:swap;src:url(/fonts/bodoni-moda-latin-500-italic.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-weight:400;font-display:swap;src:url(/fonts/hanken-grotesk-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-weight:500;font-display:swap;src:url(/fonts/hanken-grotesk-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-weight:600;font-display:swap;src:url(/fonts/hanken-grotesk-latin-600-normal.woff2) format('woff2')}
+
+:root{
+  --paper:#F2EBE1;
+  --paper-2:#E9DFD2;
+  --card:#FAF6F0;
+  --ink:#221814;
+  --ink-2:#4B3C33;
+  --mute:#7E6D62;
+  --line:rgba(34,24,20,.16);
+  --line-strong:rgba(34,24,20,.32);
+  --accent:#8E2F28;      /* oxblood */
+  --bond:#C49A5C;        /* keratin bond amber */
+  --serif:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --wrap:1200px;
+  --gutter:clamp(20px,4vw,48px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+section[id]{scroll-margin-top:110px}
+
+/* ── K-tip strand: the signature mark (a hair strand with its keratin bond) ── */
+.strand{display:inline-block;position:relative;width:8px;height:22px;flex:none;vertical-align:-5px}
+.strand::before{content:"";position:absolute;left:3.5px;top:7px;bottom:0;width:1px;background:var(--ink)}
+.strand::after{content:"";position:absolute;left:1px;top:0;width:6px;height:9px;border-radius:3px 3px 4px 4px;background:var(--bond)}
+
+/* ── Buttons ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7em;font:600 .82rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:18px 28px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;border-radius:0;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.btn .arr{display:inline-block;width:22px;height:1px;background:currentColor;position:relative;transition:width .25s var(--ease)}
+.btn .arr::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.btn:hover .arr{width:30px}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-paper{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn-paper:hover{background:var(--bond);border-color:var(--bond);color:var(--ink)}
+
+/* ── Header ── */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(242,235,225,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.dev-banner{background:var(--ink);color:#d8cfc4;text-align:center;padding:7px 12px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.dev-banner a{color:var(--bond);text-decoration:none}
+.dev-banner .dot{color:var(--bond)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.wordmark{font-family:var(--serif);font-weight:500;font-size:1.05rem;letter-spacing:.32em;text-decoration:none;white-space:nowrap}
+.nav ul{display:flex;gap:34px;list-style:none;margin:0;padding:0}
+.nav ul a{font-size:.8rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ink-2);position:relative;padding:6px 0}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--accent);transition:right .3s var(--ease)}
+.nav ul a:hover{color:var(--ink)}
+.nav ul a:hover::after{right:0}
+.nav .btn{padding:12px 18px;font-size:.72rem}
+
+/* ── Hero ── */
+.hero{padding:clamp(40px,7vw,96px) 0 clamp(56px,8vw,110px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,80px);align-items:center}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3rem,7.4vw,6.6rem);line-height:.94;letter-spacing:-.02em;margin:0}
+.hero h1 em{display:block;font-style:italic;color:var(--accent);padding-left:.55em}
+.hero .lede{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--ink-2);max-width:30em;margin:28px 0 0}
+.badges{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;margin:36px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.badge{padding:14px 22px;font-size:.78rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:10px}
+.badge:first-child{padding-left:0}
+.badge+.badge{border-left:1px solid var(--line)}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 22px;margin-top:36px}
+.ticket{position:relative;display:inline-block;text-decoration:none;color:var(--accent);font-weight:600;font-size:.95rem;letter-spacing:.02em;padding:15px 26px;border:1px dashed var(--accent);background:transparent;transition:background .25s,color .25s}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:var(--paper);border:1px dashed var(--accent)}
+.ticket::before{left:-8px;clip-path:inset(0 0 0 50%)}
+.ticket::after{right:-8px;clip-path:inset(0 50% 0 0)}
+.ticket:hover{background:var(--accent);color:var(--paper)}
+.hero .note{margin:16px 0 0;font-size:.85rem;color:var(--mute)}
+.note-m{display:none}
+.hero-figure{position:relative;margin:0}
+.hero-figure .frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper-2)}
+.hero-figure img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero-figure::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--line-strong);z-index:-1}
+.hero-figure .hang{position:absolute;left:-26px;top:-30px;display:flex;flex-direction:column;align-items:center}
+.hero-figure .hang .strand{height:120px;width:10px}
+.hero-figure .hang .strand::after{width:8px;height:12px;left:1px}
+.hero-figure .hang .strand::before{left:4.5px}
+
+/* ── Section heads ── */
+.sec{padding:clamp(64px,9vw,128px) 0}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sec-no{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--accent);grid-row:span 2;align-self:start;padding-top:.9em;display:flex;align-items:center;gap:12px}
+.sec-no::after{content:"";width:48px;height:1px;background:var(--accent)}
+.sec-title{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,4.6vw,3.8rem);line-height:1.02;letter-spacing:-.015em;margin:0}
+.sec-sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--ink-2);margin:0}
+.sec-sub a{color:var(--accent);text-underline-offset:3px}
+
+/* ── Feature rows (service / stylist / benefits) ── */
+.row{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,6vw,96px);align-items:center}
+.row + .row{margin-top:clamp(72px,10vw,140px)}
+.row.flip{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+.row.flip .row-media{order:2}
+.row-media{position:relative;margin:0}
+.row-media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.row-media figcaption{position:absolute;right:0;bottom:-1px;background:var(--paper);padding:10px 0 0 16px;font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--mute)}
+.row h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.2vw,2.7rem);line-height:1.05;margin:0 0 22px;letter-spacing:-.01em}
+
+.steps{list-style:none;margin:0 0 34px;padding:0;counter-reset:s;border-top:1px solid var(--line)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-style:italic;color:var(--accent);font-size:1.05rem}
+
+/* Price tag */
+.tag{background:var(--ink);color:var(--paper);padding:30px 30px 28px;position:relative}
+.tag::before{content:"";position:absolute;top:18px;right:18px;width:12px;height:12px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+.tag-label{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#cbbfb1}
+.tag-label b{color:var(--bond);font-weight:600}
+.countdown{font-variant-numeric:tabular-nums;font-weight:600;font-size:1.35rem;letter-spacing:.06em;margin:6px 0 18px;color:#fff}
+.prices{display:flex;align-items:baseline;gap:18px;border-top:1px solid rgba(242,235,225,.18);padding-top:16px}
+.prices s{font-family:var(--serif);font-size:1.5rem;color:#a99b8e;text-decoration-thickness:1px}
+.prices strong{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,6vw,4.6rem);line-height:1;color:var(--paper)}
+.tag .btn{width:100%;margin-top:24px}
+.tag .incl{margin:14px 0 0;text-align:center;font-family:var(--serif);font-style:italic;color:#d8cfc4;font-size:1.02rem}
+
+.bio{font-family:var(--serif);font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.45;margin:0 0 30px;color:var(--ink)}
+.facts{list-style:none;margin:0 0 34px;padding:0}
+.facts li{display:flex;align-items:center;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:1.02rem}
+.facts li:first-child{border-top:1px solid var(--line)}
+.facts a{color:var(--accent);text-underline-offset:3px}
+.facts.big li{font-family:var(--serif);font-size:clamp(1.2rem,1.9vw,1.5rem);padding:14px 0}
+.facts.big strong{font-weight:400}
+
+/* ── Reviews ── */
+.reviews{background:var(--paper-2)}
+.quotes{display:grid;grid-template-columns:1.25fr 1fr 1.1fr;border-top:1px solid var(--line-strong)}
+.quote{padding:34px 34px 10px 0;margin:0}
+.quote + .quote{padding-left:34px;border-left:1px solid var(--line)}
+.quote::before{content:"\201C";display:block;font-family:var(--serif);font-size:4.4rem;line-height:.7;color:var(--accent);margin-bottom:10px}
+.quote p{font-family:var(--serif);font-size:1.12rem;line-height:1.55;margin:0 0 20px}
+.quote cite{font-style:normal;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.quote cite a{text-decoration:none;color:var(--ink-2);border-bottom:1px solid var(--line-strong);padding-bottom:2px}
+.quote cite a:hover{color:var(--accent);border-color:var(--accent)}
+
+/* ── Gallery ── */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:10px;aspect-ratio:16/9}
+.gallery figure{margin:0;overflow:hidden;background:var(--paper-2)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figure:nth-child(1){grid-row:1/3}
+.gallery figure:nth-child(4){grid-column:2/4}
+
+/* ── Contact ── */
+.contact{background:var(--ink);color:var(--paper)}
+.contact .sec-title{color:var(--paper)}
+.contact .sec-sub{color:#cbbfb1}
+.contact .sec-no{color:var(--bond)}
+.contact .sec-no::after{background:var(--bond)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:stretch}
+.dl{margin:0;border-top:1px solid rgba(242,235,225,.2)}
+.dl div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid rgba(242,235,225,.2)}
+.dl dt{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#a99b8e;padding-top:.35em}
+.dl dd{margin:0;font-family:var(--serif);font-size:1.3rem}
+.dl a{color:var(--paper);text-decoration:none;border-bottom:1px solid rgba(242,235,225,.35)}
+.dl a:hover{color:var(--bond);border-color:var(--bond)}
+.contact .btn{margin-top:30px}
+.legal{margin-top:34px;font-size:.82rem;color:#a99b8e;line-height:1.9}
+.legal a{color:#cbbfb1;text-underline-offset:3px}
+.map{min-height:320px;filter:grayscale(1) sepia(.25) contrast(.95);border:1px solid rgba(242,235,225,.2)}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+
+/* ── Footer ── */
+.site-footer{background:var(--ink);color:#a99b8e;border-top:1px solid rgba(242,235,225,.14);padding:34px 0 40px}
+.site-footer .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+.site-footer .wordmark{color:var(--paper);font-size:.95rem}
+.site-footer small{font-size:.82rem}
+
+/* ── Modals ── */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(34,24,20,.62)}
+.modal.open{display:flex}
+.sheet{background:var(--paper);width:100%;max-width:440px;padding:34px 30px 28px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.sheet h2{font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1.05;margin:0 40px 8px 0}
+.sheet > p{margin:0 0 22px;color:var(--ink-2);font-size:.98rem}
+.x{position:absolute;top:16px;right:16px;width:36px;height:36px;border:1px solid var(--line-strong);background:transparent;cursor:pointer;font-size:18px;line-height:1;color:var(--ink)}
+.x:hover{border-color:var(--ink)}
+.field{display:block;margin-bottom:18px}
+.field span{display:block;font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+.field input{width:100%;font:inherit;font-size:1.05rem;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line-strong);padding:8px 0;border-radius:0;outline:none}
+.field input:focus{border-bottom-color:var(--accent)}
+.sheet .btn{width:100%;margin-top:6px}
+.sheet .alt{display:block;text-align:center;margin-top:14px;font-size:.92rem;color:var(--accent);text-underline-offset:3px}
+.sheet .fine{margin:14px 0 0;font-size:.8rem;color:var(--mute);text-align:center}
+.form-error{margin:0 0 12px;padding:10px 12px;border:1px solid var(--accent);color:var(--accent);font-size:.9rem;text-align:center}
+.sheet.thanks{text-align:center;max-width:360px}
+.sheet.thanks h2{margin:0 0 10px}
+.sheet.thanks .strand{margin:0 auto 16px;display:block}
+
+/* ── Reveal ── */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.gallery img{transition:none}}
+
+/* ── Responsive ── */
+@media (max-width:980px){
+  .nav ul{display:none}
+  .hero-grid,.row,.row.flip,.contact-grid{grid-template-columns:1fr}
+  .row.flip .row-media{order:0}
+  .hero-figure{max-width:520px}
+  .quotes{grid-template-columns:1fr}
+  .quote,.quote + .quote{padding:28px 0 18px;border-left:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .dev-long{display:none}
+  .nav{height:62px;gap:12px}
+  .wordmark{font-size:.82rem;letter-spacing:.24em}
+  .nav .btn{padding:10px 12px;font-size:.66rem;letter-spacing:.1em}
+  .hero h1 em{padding-left:0}
+  .badges{grid-template-columns:1fr;border-bottom:0}
+  .badge,.badge:first-child{padding:12px 0;border-bottom:1px solid var(--line)}
+  .badge+.badge{border-left:0}
+  .hero-actions .btn{width:100%}
+  .ticket{width:calc(100% - 16px);margin:0 8px;text-align:center}
+  .note-d{display:none}
+  .note-m{display:block}
+  .hero-figure::before{inset:10px -10px -10px 10px}
+  .hero-figure .hang{display:none}
+  .sec-head{grid-template-columns:1fr}
+  .sec-no{grid-row:auto;padding-top:0}
+  .tag{padding:26px 22px 22px}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto;aspect-ratio:auto}
+  .gallery figure{aspect-ratio:1}
+  .gallery figure:nth-child(1){grid-row:auto;grid-column:1/3;aspect-ratio:4/3}
+  .gallery figure:nth-child(4){grid-column:1/3;aspect-ratio:4/3}
+  .dl div{grid-template-columns:1fr;gap:4px}
+  .contact .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="dev-banner"><span class="dot">&#9679;</span> Service not yet active<span class="dev-long"> &middot; Website in development</span> &middot; <a href="https://clickbari.it/" target="_blank" rel="noopener">clickbari.it</a></div>
+  <div class="wrap nav">
+    <a class="wordmark" href="#home" aria-label="Luxe Hair Stylist home">LUXE HAIR STYLIST</a>
+    <ul aria-label="Primary">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="https://wa.me/393805826738">Write on WhatsApp</a>
+  </div>
+</header>
+
+<main id="home">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>K-tip Hair Extensions <em>in Brooklyn</em></h1>
+        <p class="lede">Natural-looking, damage-free K-tip install with premium Slavic hair.</p>
+        <div class="badges">
+          <div class="badge">⭐ 5.0 Client Reviews</div>
+          <div class="badge">Certified K‑tip Specialist</div>
+          <div class="badge">Reply within 1 hour*</div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn" id="open-consultation" type="button">Get Free Consultation <span class="arr" aria-hidden="true"></span></button>
+          <a href="#promo-deal" class="ticket">✨ Monthly Offer: $200 OFF (till <span class="offer-end-date">end of month</span>)</a>
+        </div>
+        <p class="note note-d">*During working hours.</p>
+        <p class="note note-m">We’ll contact you within 1 hour</p>
+      </div>
+      <figure class="hero-figure">
+        <div class="hang" aria-hidden="true"><span class="strand"></span></div>
+        <div class="frame"><img src="/heronew123.webp" alt="Keratin hair extensions" width="1200" height="900" fetchpriority="high" decoding="async"/></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="services" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-no">01</span>
+        <h2 class="sec-title">Where Your Best Hair Story Begins</h2>
+        <p class="sec-sub">Hair that turns heads effortlessly</p>
+      </div>
+
+      <div class="row rv">
+        <figure class="row-media"><img src="/heronew.webp" alt="Keratin hair extensions procedure" width="1200" height="800" loading="lazy" decoding="async"/></figure>
+        <div>
+          <h3>Keratin Hair Extensions</h3>
+          <ol class="steps">
+            <li>Consultation &amp; color match</li>
+            <li>Strand-by-strand keratin bond installation</li>
+            <li>Final styling &amp; photos</li>
+          </ol>
+          <div class="tag" id="promo-deal">
+            <div class="tag-label">This month’s deal ends <b>IN:</b></div>
+            <div class="countdown" id="xmas-countdown">—</div>
+            <div class="prices"><s>$1000</s><strong>$799</strong></div>
+            <button class="btn btn-paper" type="button" data-open-consultation>Get Free Consultation <span class="arr" aria-hidden="true"></span></button>
+            <p class="incl">Hair is included in the price</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row flip rv">
+        <figure class="row-media"><img src="/stylist.webp" alt="Your stylist" width="700" height="532" loading="lazy" decoding="async"/></figure>
+        <div>
+          <h3>Stylist Victoria</h3>
+          <p class="bio">Hi! I’m Victoria — your personal hair stylist. I work carefully, precisely, and always focus on natural-looking results.</p>
+          <ul class="facts">
+            <li><span class="strand" aria-hidden="true"></span><span>My <a href="https://www.instagram.com/luxehairstylist/" target="_blank" rel="noopener noreferrer">Instagram</a></span></li>
+            <li><span class="strand" aria-hidden="true"></span><span>Over 20 years of experience</span></li>
+            <li><span class="strand" aria-hidden="true"></span><span>Top-quality materials</span></li>
+            <li><span class="strand" aria-hidden="true"></span><span>Licensed hair extension specialist</span></li>
+          </ul>
+          <a class="btn btn-line" href="#testimonials">See Reviews <span class="arr" aria-hidden="true"></span></a>
+        </div>
+      </div>
+
+      <div class="row rv">
+        <figure class="row-media"><img src="/pricesnew.webp" alt="Premium Slavic hair extensions" width="1200" height="800" loading="lazy" decoding="async"/></figure>
+        <div>
+          <h3>What You Get</h3>
+          <ul class="facts big">
+            <li><span class="strand" aria-hidden="true"></span><strong>Premium Slavic hair</strong></li>
+            <li><span class="strand" aria-hidden="true"></span><strong>Safe, damage-free technique</strong></li>
+            <li><span class="strand" aria-hidden="true"></span><strong>Invisible keratin bonds</strong></li>
+            <li><span class="strand" aria-hidden="true"></span><strong>Lasts up to 4 months</strong></li>
+            <li><span class="strand" aria-hidden="true"></span><strong>Water-resistant K-tips</strong></li>
+          </ul>
+          <a class="btn btn-line" href="#gallery">See Results <span class="arr" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec reviews" id="testimonials">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-no">02</span>
+        <h2 class="sec-title">Client Love</h2>
+        <p class="sec-sub">See more reviews on <a href="https://www.instagram.com/luxehairstylist/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+      </div>
+      <div class="quotes rv">
+        <blockquote class="quote">
+          <p>My go-to girl for cut &amp; color! ✨<br/>Whether its the salon or a house call – she always over delivers and exceeds my expectations every time. Her attention to detail, patience and hospitality is top tier!<br/>thank you for always having a chair open for me 🤲🏼</p>
+          <cite><a href="https://instagram.com/megannaymik" target="_blank" rel="noopener noreferrer">@megannaymik</a></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Thank you for bringimg my vision to life. Love my hair ❤️</p>
+          <cite><a href="https://instagram.com/jada_of_all_trades" target="_blank" rel="noopener noreferrer">@jada_of_all_trades</a></cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Absolutely obsessed with my hair! ✨<br/>Thank you so much for the gorgeous highlights and the perfect stoner vibe blend — you truly understood the assignment. I'm feeling like a whole new person! 💛 can’t wait for my next appointment 🙌</p>
+          <cite><a href="https://instagram.com/theladyalyona" target="_blank" rel="noopener noreferrer">@theladyalyona</a></cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="gallery">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-no">03</span>
+        <h2 class="sec-title">Beauty Transformations</h2>
+        <p class="sec-sub">Before &amp; After Results on the Stylist’s <a href="https://www.instagram.com/luxehairstylist/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+      </div>
+      <div class="gallery rv">
+        <figure><img src="/photo4.webp" alt="Hair result 1" width="900" height="600" loading="lazy" decoding="async"/></figure>
+        <figure><img src="/photo2.webp" alt="Hair result 2" width="900" height="600" loading="lazy" decoding="async"/></figure>
+        <figure><img src="/photo1.webp" alt="Hair result 3" width="900" height="600" loading="lazy" decoding="async"/></figure>
+        <figure><img src="/photo3.webp" alt="Hair result 4" width="900" height="600" loading="lazy" decoding="async"/></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="sec-no">04</span>
+        <h2 class="sec-title">Book an Appointment</h2>
+        <p class="sec-sub">Have a question? Send a message — we’ll respond within 1 hour (during working hours).</p>
+      </div>
+      <div class="contact-grid rv">
+        <div>
+          <dl class="dl">
+            <div><dt>Location</dt><dd><a href="https://maps.google.com/?q=167+Sands+St,+Brooklyn,+NY" target="_blank" rel="noopener">167 Sands St, Brooklyn, NY</a></dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/393805826738">Write on WhatsApp</a></dd></div>
+            <div><dt>Hours</dt><dd>By appointment</dd></div>
+          </dl>
+          <p class="legal"><a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | <a href="/donotsell.html" target="_blank" rel="noopener noreferrer">Do Not Sell or Share My Personal Information</a> | <a href="/cookies.html">Cookie Settings</a></p>
+        </div>
+        <div class="map">
+          <iframe title="167 Sands St, Brooklyn, NY" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.911974046008!2d-73.98547692351946!3d40.701762337142374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3b9a9e07a7%3A0xf3a62c5f3ccecb3b!2s167%20Sands%20St%2C%20Brooklyn%2C%20NY%2011201%2C%20USA!5e0!3m2!1sen!2sus!4v1733946000000"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="wordmark">LUXE HAIR STYLIST</span>
+    <small>© <span id="year"></span> Luxe Hair Stylist. All rights reserved.</small>
+  </div>
+</footer>
+
+<!-- Lead capture modal -->
+<div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-title">
+  <div class="sheet">
+    <button class="x" id="lead-modal-close" type="button" aria-label="Close">✕</button>
+    <h2 id="lead-title">Free consultation</h2>
+    <p>Leave your name and phone — we’ll text/call to confirm details.</p>
+    <form action="https://formspree.io/f/mlgkbbkv" id="hero-contact-form" method="POST">
+      <input type="hidden" name="_subject" value="Nuova richiesta — KTip (ktiphairextension.com)"/>
+      <input type="hidden" name="sito" value="KTip — ktiphairextension.com"/>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"/>
+      <label class="field"><span>Name</span><input name="name" type="text" placeholder="Your name" required autocomplete="name"/></label>
+      <label class="field"><span>Phone</span><input name="phone" type="tel" placeholder="+1 (___) ___-____" required autocomplete="tel"/></label>
+      <button class="btn" type="submit">Send</button>
+      <a class="alt" href="https://wa.me/393805826738">Or write on WhatsApp</a>
+      <p class="fine">No spam. We only use your contact to respond to your request.</p>
+    </form>
+  </div>
+</div>
+
+<!-- Success modal -->
+<div class="modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="ok-title">
+  <div class="sheet thanks">
+    <span class="strand" aria-hidden="true"></span>
+    <h2 id="ok-title">Thank you!</h2>
+    <p>We'll get back to you shortly.</p>
+    <button class="btn" id="success-modal-close" type="button">Close</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Monthly promo: ends on the last day of the current month, 23:59 local time
+  var cd = document.getElementById('xmas-countdown');
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function tick(){
+    var now = new Date();
+    var target = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
+    var t = Math.max(0, Math.floor((target - now) / 1000));
+    cd.textContent = Math.floor(t / 86400) + 'd ' + pad(Math.floor(t % 86400 / 3600)) + 'h ' + pad(Math.floor(t % 3600 / 60)) + 'm ' + pad(t % 60) + 's';
+  }
+  tick(); setInterval(tick, 1000);
+  var last = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0);
+  document.querySelectorAll('.offer-end-date').forEach(function(el){ el.textContent = (last.getMonth() + 1) + '/' + last.getDate(); });
+
+  // Modals
+  var lead = document.getElementById('lead-modal');
+  var ok = document.getElementById('success-modal');
+  function open(m){ m.classList.add('open'); var f = m.querySelector('input:not([type=hidden]):not([name=_gotcha]), button'); if (f) setTimeout(function(){ f.focus(); }, 30); }
+  function close(m){ m.classList.remove('open'); }
+  document.getElementById('open-consultation').addEventListener('click', function(){ open(lead); });
+  document.querySelectorAll('[data-open-consultation]').forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); open(lead); }); });
+  document.getElementById('lead-modal-close').addEventListener('click', function(){ close(lead); });
+  document.getElementById('success-modal-close').addEventListener('click', function(){ close(ok); });
+  [lead, ok].forEach(function(m){ m.addEventListener('click', function(e){ if (e.target === m) close(m); }); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { close(lead); close(ok); } });
+
+  // Form → Formspree
+  var form = document.getElementById('hero-contact-form');
+  var btn = form.querySelector('button[type=submit]');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    btn.disabled = true; btn.textContent = 'Sending…';
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function(r){ if (!r.ok) throw new Error('Network error'); })
+      .then(function(){
+        form.reset(); close(lead); open(ok);
+        var err = form.querySelector('.form-error'); if (err) err.remove();
+        if (window.dataLayer && typeof window.dataLayer.push === 'function') window.dataLayer.push({ event: 'form_success' });
+      })
+      .catch(function(){
+        if (!form.querySelector('.form-error')) {
+          var p = document.createElement('p'); p.className = 'form-error';
+          p.textContent = 'Something went wrong. Please write us on WhatsApp.';
+          btn.insertAdjacentElement('beforebegin', p);
+        }
+      })
+      .finally(function(){ btn.disabled = false; btn.textContent = 'Send'; });
+  });
+
+  // Reveal on scroll
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }); }, { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
